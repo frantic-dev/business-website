@@ -240,24 +240,28 @@ header {
 #dark-bg {
   background: #1a1a1a;
   z-index: -1;
-  width: 98vw;
-  height: 50vh;
+  // width: 98vw;
+  height: 60vh;
   #slide {
     margin: 50px auto;
     color: white;
     position: relative;
-    border: 1px solid purple;
+    // border: 1px solid purple;
     width: 60vw;
-    // overflow: hidden;
+    height: 70vh;
+    overflow: hidden;
     #slide-wrapper {
       @include flex(center, center);
-      height: 50vh;
+      height: 60vh;
       position: relative;
       left: 50%;
       transition: transform 1s;
     }
-    .transition {
+    .next-transition {
       transform: translateX(-100%);
+    }
+    .prv-transition {
+      transform: translateX(0%);
     }
     div:not(#slide-wrapper) {
       min-width: 60vw;
@@ -300,12 +304,13 @@ header {
     #left-arrow {
       position: absolute;
       left: 10%;
-      top: 50%;
+      top: 40%;
+      z-index: 1;
     }
     #right-arrow {
       position: absolute;
       right: 10%;
-      bottom: 38%;
+      bottom: 48%;
     }
   }
 }

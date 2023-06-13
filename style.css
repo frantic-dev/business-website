@@ -263,27 +263,30 @@ header div {
 #dark-bg {
   background: #1a1a1a;
   z-index: -1;
-  width: 98vw;
-  height: 50vh;
+  height: 60vh;
 }
 #dark-bg #slide {
   margin: 50px auto;
   color: white;
   position: relative;
-  border: 1px solid purple;
   width: 60vw;
+  height: 70vh;
+  overflow: hidden;
 }
 #dark-bg #slide #slide-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
+  height: 60vh;
   position: relative;
   left: 50%;
   transition: transform 1s;
 }
-#dark-bg #slide .transition {
+#dark-bg #slide .next-transition {
   transform: translateX(-100%);
+}
+#dark-bg #slide .prv-transition {
+  transform: translateX(0%);
 }
 #dark-bg #slide div:not(#slide-wrapper) {
   min-width: 60vw;
@@ -328,12 +331,13 @@ header div {
 #dark-bg #slide #left-arrow {
   position: absolute;
   left: 10%;
-  top: 50%;
+  top: 40%;
+  z-index: 1;
 }
 #dark-bg #slide #right-arrow {
   position: absolute;
   right: 10%;
-  bottom: 38%;
+  bottom: 48%;
 }
 
 #strategy-container {
