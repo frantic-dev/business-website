@@ -83,6 +83,7 @@ header div {
 
 #plans {
   padding: 10vw;
+  min-height: 50vw;
 }
 #plans img {
   width: 38vw;
