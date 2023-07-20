@@ -92,6 +92,8 @@ header div {
   z-index: -1;
   top: 10%;
   right: 15%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #plans div {
   background-color: white;
